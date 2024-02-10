@@ -1,6 +1,8 @@
-![logo](https://github.com/Emperorian/Google-fiber-project/assets/101293550/78d13337-2d7f-4d5f-a229-52458441c49d)
-
 # GOOGLE FIBER FIRST CALL RESOLUTION PROJECT
+
+![logo](https://github.com/Emperorian/Google-fiber-project/assets/101293550/f08711e9-4ff0-435c-a43c-e8918ec6e42e)
+
+
 ### BACKGROUND:
 Google Fiber provides people and businesses with fiber optic internet. Currently, the customer service team working in their call centers answers calls from customers in their established service areas. In this fictional scenario, the team is interested in exploring trends in repeat calls to reduce the number of times customers have to call for an issue to be resolved. 
 ### TASK:
