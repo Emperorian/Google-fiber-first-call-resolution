@@ -1,3 +1,4 @@
+
 # GOOGLE FIBER FIRST CALL RESOLUTION PROJECT
 ### BACKGROUND:
 Google Fiber provides people and businesses with fiber optic internet. Currently, the customer service team working in their call centers answers calls from customers in their established service areas. In this fictional scenario, the team is interested in exploring trends in repeat calls to reduce the number of times customers have to call for an issue to be resolved. 
@@ -242,6 +243,40 @@ Also, showing the base value (the total number of first calls) gives justice for
 
 #### Low-fidelity mock-up table for the project:
 ![low fidelity mockups](https://github.com/Emperorian/Google-fiber-project/assets/101293550/e2f3f247-aadd-4f37-8d01-8a9ee09da69b)
+
+# The final dashboard
+![day 0 by market and type across Q1](https://github.com/Emperorian/Google-fiber-project/assets/101293550/dbb82cd6-52f4-4278-92c6-7d48ed34dbb0)
+
+The final dashboard came out different from initial design as anticipated. However the analysis still stands. For the market and type showing in percentage for day 0 market and type across Q1, type_2 for maerket _1 show 32.51% dont forget that type 2 is troubleshooting while there is also a significant increase in type_5 which is internet and wifi.
+
+![1st repeat call by market and type across](https://github.com/Emperorian/Google-fiber-project/assets/101293550/4a005d5b-5315-4d0c-a636-4f1ad634d62f)
+
+For 1st repeat calls by market and type across Q1 type_5 for all the market shows signinantly high returns which show that internet and wifi needs looking into. There is also a slightly high return for the type_2 as well, which is the troubleshooting.
+
+![calls by market and type](https://github.com/Emperorian/Google-fiber-project/assets/101293550/caaaeee8-0ec9-4cbb-a8b5-a8374561e381)
+![Repeat by 1st call date](https://github.com/Emperorian/Google-fiber-project/assets/101293550/aa9dfa87-43e2-4fba-9301-8883006160a3)
+
+Calls by market and type in total shows an average of 64 thousand for first call while an average of 2 thousand was showing for total repeated calls.The first table allows stakeholders to explore the number of different types of calls by date. The second table then separates calls into market and problem type to provide more specific information about what markets experience the most calls and the problems customers have that seem to prompt repeat calls. 
+
+![market and first repeat call](https://github.com/Emperorian/Google-fiber-project/assets/101293550/56e91a0d-4df0-435f-9e24-46038a8e17e2)
+![repeat by month](https://github.com/Emperorian/Google-fiber-project/assets/101293550/fd831d9a-e2fd-4522-82bc-73c93e1e11aa)
+
+#### Market and Type for First Repeat Calls
+The Market and Type for First Repeat Calls uses the data from the previous tabs table in order to further visualize the problem types that seem to generate the most repeat calls for different markets. 
+You can interact with the dashboard on tableau here: [google fiber link tableau](https://public.tableau.com/authoring/GOOGLEBUSINESSINTELLIGENCECAPSTONEPROJECTGOOGLEFIBER/Story1#1)
+
+
+# Key Findings:
+- Market_1 generates the highest percentage of repeat calls, followed by market_3 and market_2.
+- Internet and wifi (Type_5) and technician troubleshooting (Type_2) issues account for 80.24% of repeat calls.
+- The customer service team receives an average of 25% repeat calls within seven days of the initial contact.
+
+ 
+ # Recommendations:
+- Providing additional training and support for handling technician troubleshooting and internet and wifi issues.
+- Allocating more resources and staff to market_1 to address the higher volume of repeat calls.
+- A verification department might be created to double calls activity on a day basics to avoid huge complilations
+
 
 
 
