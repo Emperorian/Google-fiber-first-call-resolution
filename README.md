@@ -207,19 +207,31 @@ The above code will produce the a merge of the three tables into one target tabl
  ****contacts_n = number of first calls****
  
  ****contacts_n_1 = number of follow-up calls (out of the first calls) after 1 day****
+ 
  ****contacts_n_2 = number of follow-up calls (out of the first calls) after 2 days****
-****contacts_n_3 = number of follow-up calls (out of the first calls) after 3 days****
-****contacts_n_4 = number of follow-up calls (out of the first calls) after 4 days****
-****contacts_n_5 = number of follow-up calls (out of the first calls) after 5 days****
-****contacts_n_6 = number of follow-up calls (out of the first calls) after 6 days****
-****contacts_n_7 = number of follow-up calls (out of the first calls) after 7 days****
-****new_type = type of the problem for the call (type_1 = account management,****
-****type_2 = technician troubleshooting, type_3 = scheduling, type_4 = construction,**** 
-****type_5 = internet and wifi)****
-****new_market = there are 3 possible values (market_1, market_2, market_3) that correspond to different cities and that are anonymized by the course instructors**** 
+ 
+ ****contacts_n_3 = number of follow-up calls (out of the first calls) after 3 days****
+ 
+ ****contacts_n_4 = number of follow-up calls (out of the first calls) after 4 days****
+
+ ****contacts_n_5 = number of follow-up calls (out of the first calls) after 5 days****
+ 
+ ****contacts_n_6 = number of follow-up calls (out of the first calls) after 6 days****
+ 
+ ****contacts_n_7 = number of follow-up calls (out of the first calls) after 7 days****
+ 
+ ****new_type = type of the problem for the call (type_1 = account management,****
+ 
+ ****type_2 = technician troubleshooting, type_3 = scheduling, type_4 = construction,**** 
+ 
+ ****type_5 = internet and wifi)****
+ 
+ ****new_market = there are 3 possible values (market_1, market_2, market_3) that correspond to different cities and that are anonymized by the course instructors**** 
+
 The UNION ALL statement is applied here instead of a JOIN statement because the tables already have matching columns, making them easy to merge completely. 
 After you have run this query, you should have a combined table like this:
 ![combined table](https://github.com/Emperorian/Google-fiber-project/assets/101293550/1df04425-1760-4d30-9f47-899b889dea01)
+
 The table above is cropped but  the table should be 1350 rows.
 
 # 3rd phase: Monitor 
