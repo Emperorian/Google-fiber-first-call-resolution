@@ -135,111 +135,125 @@ User Profiles Who is the intended audience for this dashboard? How do you expect
 - Sylvie Essa,  BI Analyst
     
 Dashboard Functionality
-
-
-Dashboard Feature
-Your Request
-Reference dashboard
-Should this dashboard be modeled on an existing dashboard? If so, provide a link and describe the similarity.
-Build a new dashboard to explore the number of repeat callers and their problem types in three different market cities.
-
-
-
-Access
-How should access to the dashboard be limited? Who needs to have access?
-Access will be provided as read-only to the user profiles listed in this document. 
-Scope
-What data should be included (or excluded) in this dashboard?
-Fields include: date, market, problem_type, contact_n and contact_n_#
-Date filters and granularity
-Should the dashboard include date filters? If so, what time frame should be displayed by default? Should the dashboard include a “Granularity” drop-down? If so, what granularity should be selected by default?
-Data filters can be applied for the following:
-Week, Month, Quarter
-
-Granularity:
-Any chart with detailed metrics should have the ability to click on that metric to view specific information.
-
-
-
-
-Metrics and Charts
+![DASHBOARD FUNCTIONALITY](https://github.com/Emperorian/Google-fiber-project/assets/101293550/d78009c4-e190-409c-bba0-a5820ded28df)
+#### Metrics and Charts
 Please create a table like the example below for each chart that you’d like to include in the dashboard. If you’d like to break the dashboard under different headers, feel free to list those here as well.
-Chart 1
-Chart Feature
-Your Request
-Chart title
-Repeat calls by first date
-Chart type
-What type of chart needs to be created? This could include any chart type, including a line chart (timeseries), bar chart, or table.
-Table
-Dimension(s)
-What dimensions does this chart need to include?
-Day of initial call, subsequent repeat calls
-Metric(s)
-What metrics are relevant to this chart?
-Contact
+![CHAT 1](https://github.com/Emperorian/Google-fiber-project/assets/101293550/d38a2ae7-10d8-42af-90eb-006c25b52452)
 
+![CHAT 2](https://github.com/Emperorian/Google-fiber-project/assets/101293550/31fe8cc8-29e3-40fd-8483-354c0852bdc5)
 
-Chart 2
-Chart Feature
-Your Request
-Chart title
-Market and Problem Type of First Repeat Calls
-Chart type
-What type of chart needs to be created? This could include any chart type, including a line chart (timeseries), bar chart, or table.
-Bar
-Dimension(s)
-What dimensions does this chart need to include?
-Call type, market, contact_n_1
-Metric(s)
-What metrics are relevant to this chart?
-Contact
+![CHAT 3](https://github.com/Emperorian/Google-fiber-project/assets/101293550/16fa21af-a3bf-49bd-bfaa-2bfe9be35423)
 
+![CHAT 4](https://github.com/Emperorian/Google-fiber-project/assets/101293550/805d0543-13e9-4f49-a48f-a8d65b973839)
 
+# 2ND PHASE: Analyze
+In the phase with the dataset, we going to create a dashboard for the stakeholders. To work with the Google Fiber data, you will need to upload your data to the appropriate workspace. If you plan on using BigQuery or Dataflow, upload the files to your project space to JOIN them. Additionally, because this data is already clean, you can connect these datasets in Tableau directly and merge them there. 
+Your interviewers have provided three CSV files: 
 
+#### market_1 [LINK](https://docs.google.com/spreadsheets/d/1a9IKjkvOvYHRx84SyRdp4Sq81EzgeOZPufcRtrUcAIc/template/preview#gid=775366698)
+#### Market_2 [LINK](https://docs.google.com/spreadsheets/d/19CINdvAwp-2RF5pphkLywZLQJyJu66EOjX6CgrW32nA/template/preview#gid=2065220237)
+#### Market_3 [LINK](https://docs.google.com/spreadsheets/d/1K6X9ZhjWtbneBss7PQH7IobGCzQ5NzG1hxs1D-hbsZM/template/preview?resourcekey=0-q90E-1XwD8nkNSjs0Ws3-w)
 
-Chart 3
-Chart Feature
-Your Request
-Chart title
-Calls by Market and Type
-Chart type
-What type of chart needs to be created? This could include any chart type, including a line chart (timeseries), bar chart, or table.
-Table
-Dimension(s)
-What dimensions does this chart need to include?
-Market, call type, day
-Metric(s)
-What metrics are relevant to this chart?
-Contact
-
-
-Chart 4
-Chart Feature
-Your Request
-Chart title
-Repeats by Week, Month, and Quarter
-Chart type
-What type of chart needs to be created? This could include any chart type, including a line chart (timeseries), bar chart, or table.
-Bar
-Dimension(s)
-What dimensions does this chart need to include?
-Date, contact
-Metric(s)
-What metrics are relevant to this chart?
-Date
-
-
-
-
-           
-
-
-
-2ND PHASE: Analyze
-
-
-
-
-
+These datasets are observed to be clean and the data appears to be in  (ROCCC) standard. To produce a dynamic tableau table the 3 tables as to be merged into one via bigquery SQL workbench or directly into tableau in a situation where bigquery is not accessible. The table consists of 450 rows and 11 columns.  
+ For the SQL code in big query:
+ ```sql
+SELECT
+  date_created,
+  contacts_n,
+  contacts_n_1,
+  contacts_n_2,
+  contacts_n_3,
+  contacts_n_4,
+  contacts_n_5,
+  contacts_n_6,
+  contacts_n_7,
+  new_type,
+  new_market
+FROM `your project.fiber.market_1`
+UNION ALL
+SELECT
+  date_created,
+  contacts_n,
+  contacts_n_1,
+  contacts_n_2,
+  contacts_n_3,
+  contacts_n_4,
+  contacts_n_5,
+  contacts_n_6,
+  contacts_n_7,
+  new_type,
+  new_market
+FROM `your project.fiber.market_2`
+UNION ALL
+SELECT
+  date_created,
+  contacts_n,
+  contacts_n_1,
+  contacts_n_2,
+  contacts_n_3,
+  contacts_n_4,
+  contacts_n_5,
+  contacts_n_6,
+  contacts_n_7,
+  new_type,
+  new_market
+FROM `your project.market_3`
+```
+The above code will produce the a merge of the three tables into one target table of destination with the following columns
+#### Descriptions of columns:
  
+ ****date_created = creation of customer support calls****
+ 
+ ****contacts_n = number of first calls****
+ 
+ ****contacts_n_1 = number of follow-up calls (out of the first calls) after 1 day****
+ ****contacts_n_2 = number of follow-up calls (out of the first calls) after 2 days****
+****contacts_n_3 = number of follow-up calls (out of the first calls) after 3 days****
+****contacts_n_4 = number of follow-up calls (out of the first calls) after 4 days****
+****contacts_n_5 = number of follow-up calls (out of the first calls) after 5 days****
+****contacts_n_6 = number of follow-up calls (out of the first calls) after 6 days****
+****contacts_n_7 = number of follow-up calls (out of the first calls) after 7 days****
+****new_type = type of the problem for the call (type_1 = account management,****
+****type_2 = technician troubleshooting, type_3 = scheduling, type_4 = construction,**** 
+****type_5 = internet and wifi)****
+****new_market = there are 3 possible values (market_1, market_2, market_3) that correspond to different cities and that are anonymized by the course instructors**** 
+The UNION ALL statement is applied here instead of a JOIN statement because the tables already have matching columns, making them easy to merge completely. 
+After you have run this query, you should have a combined table like this:
+![combined table](https://github.com/Emperorian/Google-fiber-project/assets/101293550/1df04425-1760-4d30-9f47-899b889dea01)
+The table above is cropped but  the table should be 1350 rows.
+
+# 3rd phase: Monitor 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
