@@ -235,6 +235,15 @@ After you have run this query, you should have a combined table like this:
 The table above is cropped but  the table should be 1350 rows.
 
 # 3rd phase: Monitor 
+The monitor stage is the design of the dashboard but before the dash, a low-fidelity mockup must be produced which is a rough sketch of what the dash should look like. However, we have to keep in mind some important parameters. The whole project focuses on FIRST CALL RESOLUTION (FCR) which is one of the issues with KPI (key performance index) this simply shows how call issues are resolved after the first call and how many total calls are received for the same purpose as calls initially. Also, we to keep in mind that we have to use project planning documents to identify key metrics and dashboard requirements. 
+This is a mockup of the dashboard  which initially designed, although it is not perfect it should include the total number of calls, market problems, and type, three to four charts. I will make my chart as side-by-side bars for the total first calls and follow-up calls. In this way, the stakeholders can still determine how many customers repeat, which answers their problems.
+
+Also, showing the base value (the total number of first calls) gives justice for comparing 
+
+#### Low-fidelity mock-up table for the project:
+![low fidelity mockups](https://github.com/Emperorian/Google-fiber-project/assets/101293550/e2f3f247-aadd-4f37-8d01-8a9ee09da69b)
+
+
 
 
 
