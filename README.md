@@ -1,6 +1,9 @@
-# GOOGLE FIBER FIRST CALL RESOLUTION PROJECT
+![logo](https://github.com/Emperorian/Google-fiber-project/assets/101293550/a2cb1bc6-cafb-4260-90a6-aa2c1a60b4be)
 
-![logo](https://github.com/Emperorian/Google-fiber-project/assets/101293550/f08711e9-4ff0-435c-a43c-e8918ec6e42e)
+
+
+
+# GOOGLE FIBER FIRST CALL RESOLUTION PROJECT
 
 
 ### BACKGROUND:
