@@ -1,3 +1,4 @@
+![logo](https://github.com/Emperorian/Google-fiber-project/assets/101293550/78d13337-2d7f-4d5f-a229-52458441c49d)
 
 # GOOGLE FIBER FIRST CALL RESOLUTION PROJECT
 ### BACKGROUND:
