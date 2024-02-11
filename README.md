@@ -12,7 +12,7 @@
 - [BUSINESS INTELLIGENCE COURSE REVIEW](#business-intelligence-course-review)
 - [BUSINESS INTELLIGENCE TOOLS USED IN THE PROJECT](#Business-intelligence-tools-used-in-the-project)
 - [1ST PHASE: CAPTURE](#1st-phase-capture)
-  - [1. Project Requirements Document: Google Fiber customer service](project-requirements-documents-google-fiber-customer-service)
+  - [1. PROJECT REQUIREMENTS DOCUMENT: GOOGLE FIBER CUSTOMER SERVICE](project-requirements-document-google-fiber-customer-service)
   - [2. STAKEHOLDER REQUIREMENT DOCUMENTS: GOOGLE FIBER CUSTOMER SERVICE](#stakeholder-requirement-documents-google-fiber-customer-service)
   - [3. STRATEGY DOCUMENT: GOOGLE FIBER](#strategy-document-google-fiber)
 - [2ND PHASE: ANALYZE](#2nd-phase-analyse)
@@ -61,7 +61,7 @@ The business intelligence course involves the automating of processes and inform
 - Powerpoint
 
 # 1ST PHASE: CAPTURE
-# 1. Project Requirements Document: Google Fiber customer service
+# 1. PROJECT REQUIREMENTS DOCUMENT: GOOGLE FIBER CUSTOMER SERVICE
  
 ### BI Analyst: Akinbosede Morohunfoluwa Opemiposi 
 #### Client/Sponsor: Fiber customer service team
