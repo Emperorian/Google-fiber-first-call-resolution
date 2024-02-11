@@ -5,6 +5,28 @@
 
 # GOOGLE FIBER FIRST CALL RESOLUTION PROJECT
 
+## TABLE OF CONTENT
+
+- [BACKGROUND](#background)
+- [TASK](#task)
+- [BUSINESS INTELLIGENCE COURSE REVIEW](#business-intelligence-course-review)
+- [BUSINESS INTELLIGENCE TOOLS USED IN THE PROJECT](#Business-intelligence-tools-used-in-the-project)
+- [1ST PHASE: CAPTURE](#1st-phase-capture)
+  - [1. Project Requirements Document: Google Fiber customer service](project-requirements-documents-google-fiber-customer-service)
+  - [2. STAKEHOLDER REQUIREMENT DOCUMENTS: GOOGLE FIBER CUSTOMER SERVICE](#stakeholder-requirement-documents-google-fiber-customer-service)
+  - [3. STRATEGY DOCUMENT: GOOGLE FIBER](#strategy-document-google-fiber)
+- [2ND PHASE: ANALYZE](#2nd-phase-analyse)
+  - [CSV FILES](#csv-files)
+  - [FOR THE SQL CODE ON BIGQUERY WORKBENCH](#for-the-sql-code-on-bigquery-workbench)
+  - [DESCRIPTION OF COLUMNS](#description-of-columns)
+- [3RD PHASE: MONITOR](#3rd-phase-monitor)
+  - [LOW-FIDELITY MOCK-UP TABLE FOR THE PROJECT](#low-fidelity-mock-up-table-for-the-project)
+  - [THE FINAL DASHBOARD](#the-final-dashboard)
+- [KEY FINDINGS](#key-findings)
+- [RECOMMENDATIONS](#recommendations)
+
+
+
 
 ### BACKGROUND:
 Google Fiber provides people and businesses with fiber optic internet. Currently, the customer service team working in their call centers answers calls from customers in their established service areas. In this fictional scenario, the team is interested in exploring trends in repeat calls to reduce the number of times customers have to call for an issue to be resolved. 
@@ -32,13 +54,13 @@ The business intelligence course involves the automating of processes and inform
          creating a dynamic system for the implementation of the all project. In this project, Tableau was used to create the dynamic dashboard which involves encoding the dimensions(qualitative) and measure(quantitative) 
          of data.
 
-### Business intelligence tools used in the project
+### BUSINESS INTELLIGENCE TOOLS USED IN THE PROJECT
 - Bigquery SQL workbench or data flow
 - Spreadsheet
 - Tableau
 - Powerpoint
 
-# 1st phase: Capture
+# 1ST PHASE: CAPTURE
 # 1. Project Requirements Document: Google Fiber customer service
  
 ### BI Analyst: Akinbosede Morohunfoluwa Opemiposi 
@@ -91,7 +113,7 @@ The data also lists five problem types:
 The dataset records repeat calls over seven-day periods. The initial contact date is listed as contacts_n. The other call columns are then contacts_n_number of days since the first call. For example, contacts_n_6 indicates six days since the first contact. 
 
 
-# 2.  Stakeholder Requirements Document: Google Fiber customer service
+# 2. STAKEHOLDER REQUIREMENT DOCUMENTS: GOOGLE FIBER CUSTOMER SERVICE
                                                                                         
 ### BI Professional: AKINBOSEDE MOROHUNFOLUWA OPEMPOSI
 #### Client/Sponsor: Fiber customer service team
@@ -116,7 +138,7 @@ stakeholders will have access to all datasets so they can explore the steps I’
 - A chart or table exploring repeat calls by market and problem type
 - Charts showcasing repeat calls by week, month, and quarter
 
-# 3. Strategy Document: Google Fiber
+# 3. STRATEGY DOCUMENT: GOOGLE FIBER
 
 ### Sign-off matrix:
 
@@ -153,17 +175,22 @@ Please create a table like the example below for each chart that you’d like to
 
 ![CHAT 4](https://github.com/Emperorian/Google-fiber-project/assets/101293550/805d0543-13e9-4f49-a48f-a8d65b973839)
 
-# 2ND PHASE: Analyze
+# 2ND PHASE: ANALYZE 
 In the phase with the dataset, we going to create a dashboard for the stakeholders. To work with the Google Fiber data, you will need to upload your data to the appropriate workspace. If you plan on using BigQuery or Dataflow, upload the files to your project space to JOIN them. Additionally, because this data is already clean, you can connect these datasets in Tableau directly and merge them there. 
 Your interviewers have provided three CSV files: 
+
+### CSV FILES
 
 #### market_1 [LINK](https://docs.google.com/spreadsheets/d/1a9IKjkvOvYHRx84SyRdp4Sq81EzgeOZPufcRtrUcAIc/template/preview#gid=775366698)
 #### Market_2 [LINK](https://docs.google.com/spreadsheets/d/19CINdvAwp-2RF5pphkLywZLQJyJu66EOjX6CgrW32nA/template/preview#gid=2065220237)
 #### Market_3 [LINK](https://docs.google.com/spreadsheets/d/1K6X9ZhjWtbneBss7PQH7IobGCzQ5NzG1hxs1D-hbsZM/template/preview?resourcekey=0-q90E-1XwD8nkNSjs0Ws3-w)
 
 These datasets are observed to be clean and the data appears to be in  (ROCCC) standard. To produce a dynamic tableau table the 3 tables as to be merged into one via bigquery SQL workbench or directly into tableau in a situation where bigquery is not accessible. The table consists of 450 rows and 11 columns.  
- For the SQL code in big query:
- ```sql
+
+ 
+ ### FOR THE SQL CODE ON BIGQUERY WORKBENCH
+ 
+  ```sql
 SELECT
   date_created,
   contacts_n,
@@ -207,7 +234,8 @@ SELECT
 FROM `your project.market_3`
 ```
 The above code will produce the a merge of the three tables into one target table of destination with the following columns
-#### Descriptions of columns:
+
+### DESCRIPTION OF COLUMNS:
  
  ****date_created = creation of customer support calls****
  
@@ -241,47 +269,50 @@ After you have run this query, you should have a combined table like this:
 
 The table above is cropped but  the table should be 1350 rows.
 
-# 3rd phase: Monitor 
+# 3RD PHASE: MONITOR
 The monitor stage is the design of the dashboard but before the dash, a low-fidelity mockup must be produced which is a rough sketch of what the dash should look like. However, we have to keep in mind some important parameters. The whole project focuses on FIRST CALL RESOLUTION (FCR) which is one of the issues with KPI (key performance index) this simply shows how call issues are resolved after the first call and how many total calls are received for the same purpose as calls initially. Also, we to keep in mind that we have to use project planning documents to identify key metrics and dashboard requirements. 
 This is a mockup of the dashboard  which initially designed, although it is not perfect it should include the total number of calls, market problems, and type, three to four charts. I will make my chart as side-by-side bars for the total first calls and follow-up calls. In this way, the stakeholders can still determine how many customers repeat, which answers their problems.
 
 Also, showing the base value (the total number of first calls) gives justice for comparing 
 
-#### Low-fidelity mock-up table for the project:
+#### LOW-FIDELITY MOCK-UP TABLE FOR THE PROJECT:
 ![low fidelity mockups](https://github.com/Emperorian/Google-fiber-project/assets/101293550/e2f3f247-aadd-4f37-8d01-8a9ee09da69b)
 
-# The final dashboard
+# THE FINAL DASHBOARD
+
 ![day 0 by market and type across Q1](https://github.com/Emperorian/Google-fiber-project/assets/101293550/dbb82cd6-52f4-4278-92c6-7d48ed34dbb0)
 
-The final dashboard came out different from initial design as anticipated. However the analysis still stands. For the market and type showing in percentage for day 0 market and type across Q1, type_2 for maerket _1 show 32.51% dont forget that type 2 is troubleshooting while there is also a significant increase in type_5 which is internet and wifi.
+The final dashboard came out different from the initial design as anticipated. However, the analysis still stands. For the market and type showing in percentage for day 0 market and type across Q1, type_2 for market _1 shows 32.51% don't forget that type 2 is troubleshooting while there is also a significant increase in type_5 which is internet and wifi.
 
 ![1st repeat call by market and type across](https://github.com/Emperorian/Google-fiber-project/assets/101293550/4a005d5b-5315-4d0c-a636-4f1ad634d62f)
 
-For 1st repeat calls by market and type across Q1 type_5 for all the market shows signinantly high returns which show that internet and wifi needs looking into. There is also a slightly high return for the type_2 as well, which is the troubleshooting.
+For 1st repeat calls by market and type across Q1 type_5 for all the market shows significantly high returns which shows that internet and wifi need looking into. There is also a slightly high return for the type_2 as well, which is the troubleshooting.
 
 ![calls by market and type](https://github.com/Emperorian/Google-fiber-project/assets/101293550/caaaeee8-0ec9-4cbb-a8b5-a8374561e381)
 ![Repeat by 1st call date](https://github.com/Emperorian/Google-fiber-project/assets/101293550/aa9dfa87-43e2-4fba-9301-8883006160a3)
 
-Calls by market and type in total shows an average of 64 thousand for first call while an average of 2 thousand was showing for total repeated calls.The first table allows stakeholders to explore the number of different types of calls by date. The second table then separates calls into market and problem type to provide more specific information about what markets experience the most calls and the problems customers have that seem to prompt repeat calls. 
+Calls by market and type in total show an average of 64 thousand for the first call while an average of 2 thousand was showing for total repeated calls. The first table allows stakeholders to explore the number of different types of calls by date. The second table then separates calls into market and problem type to provide more specific information about what markets experience the most calls and the problems customers have that seem to prompt repeat calls. 
 
 ![market and first repeat call](https://github.com/Emperorian/Google-fiber-project/assets/101293550/56e91a0d-4df0-435f-9e24-46038a8e17e2)
 ![repeat by month](https://github.com/Emperorian/Google-fiber-project/assets/101293550/fd831d9a-e2fd-4522-82bc-73c93e1e11aa)
 
 #### Market and Type for First Repeat Calls
-The Market and Type for First Repeat Calls uses the data from the previous tabs table in order to further visualize the problem types that seem to generate the most repeat calls for different markets. 
-You can interact with the dashboard on tableau here: [google fiber link tableau](https://public.tableau.com/authoring/GOOGLEBUSINESSINTELLIGENCECAPSTONEPROJECTGOOGLEFIBER/Story1#1)
+The Market and Type for First Repeat Calls uses the data from the previous tabs table to further visualize the problem types that seem to generate the most repeat calls for different markets. 
+You can interact with the dashboard on Tableau here: 
+
+### [google fiber link tableau](https://public.tableau.com/authoring/GOOGLEBUSINESSINTELLIGENCECAPSTONEPROJECTGOOGLEFIBER/Story1#1)
 
 
-# Key Findings:
+# KEY FINDINGS:
 - Market_1 generates the highest percentage of repeat calls, followed by market_3 and market_2.
 - Internet and wifi (Type_5) and technician troubleshooting (Type_2) issues account for 80.24% of repeat calls.
 - The customer service team receives an average of 25% repeat calls within seven days of the initial contact.
 
  
- # Recommendations:
+ # RECOMMENDATIONS:
 - Providing additional training and support for handling technician troubleshooting and internet and wifi issues.
 - Allocating more resources and staff to market_1 to address the higher volume of repeat calls.
-- A verification department might be created to double calls activity on a day basics to avoid huge complilations
+- A verification department might be created to double-check all call activity daily to avoid huge unverified compilations
 
 
 
