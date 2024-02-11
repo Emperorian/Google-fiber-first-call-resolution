@@ -267,7 +267,7 @@ The UNION ALL statement is applied here instead of a JOIN statement because the 
 After you have run this query, you should have a combined table like this:
 ![combined table](https://github.com/Emperorian/Google-fiber-project/assets/101293550/1df04425-1760-4d30-9f47-899b889dea01)
 
-#### [MERGED TABLE HERE]
+#### [MERGED TABLE HERE](https://github.com/Emperorian/Google-fiber-project/blob/main/README.md)
 The table above is cropped but  the table should be 1350 rows.
 
 # 3RD PHASE: MONITOR
